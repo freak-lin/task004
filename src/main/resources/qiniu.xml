@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="qiniuConfiguration" class="api.QiniuSDK">
+        <constructor-arg index="0" value="AJCppXs2myoZQEhdKh5MCt7v3dvvVc2Ibkdl2l9O"/>
+<constructor-arg index="1" value="HhlaY2nd5hY4OENftVBMf1pfscr3B8G9rxfsMeAM"/>
+<constructor-arg index="2" value="picture"/>
+<constructor-arg index="3" value="http://paln96qj1.bkt.clouddn.com"/>
+<constructor-arg index="4" value="http://paln96qj1.bkt.clouddn.com"/>
+        </bean>
+    <!-- 定义文件上传解析器 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设定默认编码 -->
+        <property name="defaultEncoding" value="UTF-8"/>
+        <!--设置最大文件上传的限制-->
+        <property name="maxUploadSize" value="5242880"/>
+    </bean>
+        </beans>

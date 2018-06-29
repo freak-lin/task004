@@ -1,0 +1,339 @@
+2018-06-27 16:17:27,529 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 16:17:27,754 耗时：225 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 16:17:27 CST 2018]; root of context hierarchy 
+2018-06-27 16:17:27,808 耗时：279 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 16:17:28,184 耗时：655 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 16:17:28,586 耗时：1057 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 16:17:28,596 耗时：1067 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 16:17:28,750 耗时：1221 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 16:17:29,644 耗时：2115 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 16:17:29,648 耗时：2119 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 16:17:29,649 耗时：2120 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 16:17:29,650 耗时：2121 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 16:17:29,652 耗时：2123 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImageEdit],methods=[GET]}" onto public java.lang.String controller.QiniuController.imageEdit() 
+2018-06-27 16:17:29,652 耗时：2123 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception 
+2018-06-27 16:17:29,661 耗时：2132 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 16:17:29,662 耗时：2133 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 16:17:29,662 耗时：2133 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 16:17:30,202 耗时：2673 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 16:17:27 CST 2018]; root of context hierarchy 
+2018-06-27 16:17:30,286 耗时：2757 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 16:17:27 CST 2018]; root of context hierarchy 
+2018-06-27 16:17:30,511 耗时：2982 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2964 ms 
+2018-06-27 16:17:30,725 耗时：3196 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 16:17:30,733 耗时：3204 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 16:17:30 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 16:17:30,735 耗时：3206 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 16:17:30,817 耗时：3288 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 16:17:30,890 耗时：3361 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 164 ms 
+2018-06-27 17:33:55,601 耗时：4588072 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@5ccaa70d 
+2018-06-27 17:34:39,236 耗时：4631707 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@5e894409 
+2018-06-27 17:37:34,118 耗时：4806589 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@1a0c3c22 
+2018-06-27 17:37:49,896 耗时：4822367 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@d0b5eb8 
+2018-06-27 18:33:05,949 耗时：8138420 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@127e6165 
+2018-06-27 18:33:14,596 耗时：8147067 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@30ce56c1 
+2018-06-27 18:34:59,708 耗时：8252179 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@344f9d9 
+2018-06-27 18:35:01,816 耗时：8254287 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@222b6100 
+2018-06-27 18:58:51,453 耗时：9683924 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@2f827638 
+2018-06-27 19:23:47,416 耗时：11179887 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@147e0147 
+2018-06-27 19:23:50,469 耗时：11182940 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@44af50e 
+2018-06-27 19:23:50,998 耗时：11183469 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@6a4abaf8 
+2018-06-27 19:23:52,074 耗时：11184545 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@719b30dc 
+2018-06-27 19:27:08,335 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 19:27:08,490 耗时：155 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 19:27:08 CST 2018]; root of context hierarchy 
+2018-06-27 19:27:08,545 耗时：210 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 19:27:08,844 耗时：509 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 19:27:09,156 耗时：821 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 19:27:09,168 耗时：833 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:27:09,282 耗时：947 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 19:27:09,902 耗时：1567 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 19:27:09,904 耗时：1569 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 19:27:09,905 耗时：1570 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 19:27:09,905 耗时：1570 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 19:27:09,906 耗时：1571 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception 
+2018-06-27 19:27:09,908 耗时：1573 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:27:09,909 耗时：1574 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 19:27:09,909 耗时：1574 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:27:10,398 耗时：2063 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:27:08 CST 2018]; root of context hierarchy 
+2018-06-27 19:27:10,485 耗时：2150 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:27:08 CST 2018]; root of context hierarchy 
+2018-06-27 19:27:10,679 耗时：2344 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2341 ms 
+2018-06-27 19:27:10,890 耗时：2555 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 19:27:10,897 耗时：2562 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 19:27:10 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 19:27:10,898 耗时：2563 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 19:27:10,980 耗时：2645 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:27:11,053 耗时：2718 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 163 ms 
+2018-06-27 19:27:55,510 耗时：47175 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@7726358 
+2018-06-27 19:32:57,195 耗时：348860 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@2d78d1a1 
+2018-06-27 19:33:30,842 耗时：382507 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@72f97be0 
+2018-06-27 19:33:31,887 耗时：383552 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@52cf6c8d 
+2018-06-27 19:33:39,126 耗时：390791 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@66a82132 
+2018-06-27 19:33:40,270 耗时：391935 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@460665f5 
+2018-06-27 19:33:40,656 耗时：392321 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@3466e4a6 
+2018-06-27 19:33:47,880 耗时：399545 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@32611dd8 
+2018-06-27 19:33:57,611 耗时：409276 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@35577cb9 
+2018-06-27 19:44:49,858 耗时：1061523 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@4e3700ce 
+2018-06-27 19:51:02,464 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 19:51:02,718 耗时：254 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 19:51:02 CST 2018]; root of context hierarchy 
+2018-06-27 19:51:02,763 耗时：299 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 19:51:03,045 耗时：581 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 19:51:03,330 耗时：866 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 19:51:03,348 耗时：884 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:51:03,464 耗时：1000 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 19:51:04,144 耗时：1680 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 19:51:04,145 耗时：1681 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 19:51:04,146 耗时：1682 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 19:51:04,147 耗时：1683 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 19:51:04,148 耗时：1684 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage/{id}],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 19:51:04,149 耗时：1685 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:51:04,150 耗时：1686 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 19:51:04,151 耗时：1687 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:51:04,649 耗时：2185 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:51:02 CST 2018]; root of context hierarchy 
+2018-06-27 19:51:04,836 耗时：2372 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:51:02 CST 2018]; root of context hierarchy 
+2018-06-27 19:51:05,017 耗时：2553 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2534 ms 
+2018-06-27 19:51:05,215 耗时：2751 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 19:51:05,224 耗时：2760 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 19:51:05 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 19:51:05,227 耗时：2763 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 19:51:05,333 耗时：2869 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:51:05,426 耗时：2962 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 210 ms 
+2018-06-27 19:54:36,400 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 19:54:36,605 耗时：205 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 19:54:36 CST 2018]; root of context hierarchy 
+2018-06-27 19:54:36,693 耗时：293 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 19:54:37,005 耗时：605 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 19:54:37,349 耗时：949 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 19:54:37,362 耗时：962 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:54:37,476 耗时：1076 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 19:54:38,104 耗时：1704 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 19:54:38,105 耗时：1705 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 19:54:38,107 耗时：1707 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 19:54:38,107 耗时：1707 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 19:54:38,109 耗时：1709 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage/{id}],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,java.lang.Integer) throws java.lang.Exception 
+2018-06-27 19:54:38,110 耗时：1710 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:54:38,110 耗时：1710 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 19:54:38,111 耗时：1711 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 19:54:38,576 耗时：2176 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:54:36 CST 2018]; root of context hierarchy 
+2018-06-27 19:54:38,656 耗时：2256 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 19:54:36 CST 2018]; root of context hierarchy 
+2018-06-27 19:54:38,833 耗时：2433 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2427 ms 
+2018-06-27 19:54:39,033 耗时：2633 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 19:54:39,040 耗时：2640 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 19:54:39 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 19:54:39,041 耗时：2641 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 19:54:39,115 耗时：2715 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 19:54:39,191 耗时：2791 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 157 ms 
+2018-06-27 20:02:16,120 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:02:16,287 耗时：167 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:02:16 CST 2018]; root of context hierarchy 
+2018-06-27 20:02:16,335 耗时：215 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:02:16,605 耗时：485 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:02:17,044 耗时：924 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:02:17,056 耗时：936 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:02:17,152 耗时：1032 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:02:17,762 耗时：1642 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:02:17,764 耗时：1644 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:02:17,765 耗时：1645 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:02:17,765 耗时：1645 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:02:17,767 耗时：1647 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage/{id}],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 20:02:17,768 耗时：1648 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:02:17,769 耗时：1649 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:02:17,769 耗时：1649 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:02:18,259 耗时：2139 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:02:16 CST 2018]; root of context hierarchy 
+2018-06-27 20:02:18,368 耗时：2248 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:02:16 CST 2018]; root of context hierarchy 
+2018-06-27 20:02:18,577 耗时：2457 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2453 ms 
+2018-06-27 20:02:18,784 耗时：2664 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:02:18,793 耗时：2673 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:02:18 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:02:18,795 耗时：2675 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:02:18,895 耗时：2775 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:02:18,968 耗时：2848 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 184 ms 
+2018-06-27 20:19:39,678 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:19:39,841 耗时：163 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:19:39 CST 2018]; root of context hierarchy 
+2018-06-27 20:19:39,895 耗时：217 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:19:40,149 耗时：471 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:19:40,414 耗时：736 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:19:40,423 耗时：745 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:19:40,528 耗时：850 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:19:41,169 耗时：1491 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:19:41,170 耗时：1492 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:19:41,172 耗时：1494 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:19:41,172 耗时：1494 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:19:41,174 耗时：1496 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage/{id}],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.Exception 
+2018-06-27 20:19:41,175 耗时：1497 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:19:41,176 耗时：1498 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:19:41,176 耗时：1498 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:19:41,613 耗时：1935 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:19:39 CST 2018]; root of context hierarchy 
+2018-06-27 20:19:41,692 耗时：2014 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:19:39 CST 2018]; root of context hierarchy 
+2018-06-27 20:19:41,857 耗时：2179 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2174 ms 
+2018-06-27 20:19:42,046 耗时：2368 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:19:42,054 耗时：2376 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:19:42 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:19:42,055 耗时：2377 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:19:42,131 耗时：2453 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:19:42,203 耗时：2525 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 157 ms 
+2018-06-27 20:35:26,221 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:35:26,411 耗时：190 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:35:26 CST 2018]; root of context hierarchy 
+2018-06-27 20:35:26,457 耗时：236 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:35:26,708 耗时：487 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:35:26,998 耗时：777 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:35:27,009 耗时：788 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:35:27,130 耗时：909 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:35:27,776 耗时：1555 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:35:27,778 耗时：1557 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:35:27,780 耗时：1559 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:35:27,781 耗时：1560 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:35:27,783 耗时：1562 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 20:35:27,785 耗时：1564 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:35:27,785 耗时：1564 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:35:27,786 耗时：1565 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:35:28,216 耗时：1995 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:35:26 CST 2018]; root of context hierarchy 
+2018-06-27 20:35:28,306 耗时：2085 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:35:26 CST 2018]; root of context hierarchy 
+2018-06-27 20:35:28,515 耗时：2294 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2289 ms 
+2018-06-27 20:35:28,709 耗时：2488 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:35:28,715 耗时：2494 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:35:28 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:35:28,716 耗时：2495 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:35:28,800 耗时：2579 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:35:28,882 耗时：2661 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 173 ms 
+2018-06-27 20:36:57,841 耗时：91620 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@4cda87de 
+2018-06-27 20:36:57,842 耗时：91621 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 20:44:41,233 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:44:41,392 耗时：159 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:44:41 CST 2018]; root of context hierarchy 
+2018-06-27 20:44:41,438 耗时：205 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:44:41,931 耗时：698 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:44:42,402 耗时：1169 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:44:42,414 耗时：1181 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:44:42,596 耗时：1363 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:44:43,249 耗时：2016 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:44:43,250 耗时：2017 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:44:43,251 耗时：2018 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:44:43,252 耗时：2019 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:44:43,253 耗时：2020 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 20:44:43,255 耗时：2022 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:44:43,255 耗时：2022 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:44:43,256 耗时：2023 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:44:43,800 耗时：2567 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:44:41 CST 2018]; root of context hierarchy 
+2018-06-27 20:44:43,893 耗时：2660 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:44:41 CST 2018]; root of context hierarchy 
+2018-06-27 20:44:44,106 耗时：2873 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2870 ms 
+2018-06-27 20:44:44,311 耗时：3078 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:44:44,320 耗时：3087 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:44:44 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:44:44,323 耗时：3090 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:44:44,398 耗时：3165 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:44:44,485 耗时：3252 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 174 ms 
+2018-06-27 20:44:55,215 耗时：13982 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@839400c 
+2018-06-27 20:44:55,216 耗时：13983 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 20:47:47,614 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:47:47,952 耗时：338 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:47:47 CST 2018]; root of context hierarchy 
+2018-06-27 20:47:48,017 耗时：403 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:47:48,302 耗时：688 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:47:48,600 耗时：986 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:47:48,626 耗时：1012 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:47:48,766 耗时：1152 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:47:49,391 耗时：1777 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:47:49,392 耗时：1778 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:47:49,394 耗时：1780 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:47:49,394 耗时：1780 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:47:49,395 耗时：1781 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 20:47:49,397 耗时：1783 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:47:49,398 耗时：1784 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:47:49,398 耗时：1784 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:47:50,122 耗时：2508 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:47:47 CST 2018]; root of context hierarchy 
+2018-06-27 20:47:50,247 耗时：2633 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:47:47 CST 2018]; root of context hierarchy 
+2018-06-27 20:47:50,428 耗时：2814 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2809 ms 
+2018-06-27 20:47:50,656 耗时：3042 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:47:50,675 耗时：3061 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:47:50 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:47:50,681 耗时：3067 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:47:50,814 耗时：3200 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:47:50,920 耗时：3306 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 264 ms 
+2018-06-27 20:48:09,484 耗时：21870 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@1e12c332 
+2018-06-27 20:48:09,484 耗时：21870 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 20:51:43,082 耗时：235468 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@59804da8 
+2018-06-27 20:51:43,083 耗时：235469 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 20:51:46,354 耗时：238740 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@3e2bf3b4 
+2018-06-27 20:51:46,355 耗时：238741 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 20:59:11,239 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 20:59:11,486 耗时：247 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 20:59:11 CST 2018]; root of context hierarchy 
+2018-06-27 20:59:11,542 耗时：303 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 20:59:11,875 耗时：636 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 20:59:12,341 耗时：1102 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 20:59:12,355 耗时：1116 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:59:12,459 耗时：1220 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 20:59:13,090 耗时：1851 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 20:59:13,092 耗时：1853 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 20:59:13,094 耗时：1855 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 20:59:13,095 耗时：1856 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 20:59:13,096 耗时：1857 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 20:59:13,097 耗时：1858 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:59:13,098 耗时：1859 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 20:59:13,098 耗时：1859 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 20:59:13,680 耗时：2441 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:59:11 CST 2018]; root of context hierarchy 
+2018-06-27 20:59:13,750 耗时：2511 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 20:59:11 CST 2018]; root of context hierarchy 
+2018-06-27 20:59:13,937 耗时：2698 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2693 ms 
+2018-06-27 20:59:14,144 耗时：2905 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 20:59:14,152 耗时：2913 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 20:59:14 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 20:59:14,154 耗时：2915 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 20:59:14,231 耗时：2992 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 20:59:14,323 耗时：3084 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 178 ms 
+2018-06-27 22:53:41,990 耗时：6870751 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@bbd1ab5 
+2018-06-27 22:53:41,991 耗时：6870752 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 23:19:42,813 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 23:19:42,999 耗时：186 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 23:19:42 CST 2018]; root of context hierarchy 
+2018-06-27 23:19:43,044 耗时：231 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 23:19:43,342 耗时：529 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 23:19:43,771 耗时：958 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 23:19:43,789 耗时：976 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:19:43,928 耗时：1115 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 23:19:44,531 耗时：1718 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 23:19:44,532 耗时：1719 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 23:19:44,534 耗时：1721 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 23:19:44,534 耗时：1721 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 23:19:44,536 耗时：1723 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 23:19:44,537 耗时：1724 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:19:44,539 耗时：1726 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 23:19:44,539 耗时：1726 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:19:45,100 耗时：2287 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:19:42 CST 2018]; root of context hierarchy 
+2018-06-27 23:19:45,170 耗时：2357 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:19:42 CST 2018]; root of context hierarchy 
+2018-06-27 23:19:45,330 耗时：2517 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2512 ms 
+2018-06-27 23:19:45,525 耗时：2712 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 23:19:45,533 耗时：2720 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 23:19:45 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 23:19:45,535 耗时：2722 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 23:19:45,603 耗时：2790 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:19:45,676 耗时：2863 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 151 ms 
+2018-06-27 23:20:10,754 耗时：27941 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@5ed4dd40 
+2018-06-27 23:20:10,755 耗时：27942 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 23:22:15,588 耗时：0 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 23:22:15,776 耗时：188 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 23:22:15 CST 2018]; root of context hierarchy 
+2018-06-27 23:22:15,837 耗时：249 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 23:22:16,118 耗时：530 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 23:22:16,431 耗时：843 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 23:22:16,441 耗时：853 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:22:16,555 耗时：967 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 23:22:17,217 耗时：1629 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 23:22:17,218 耗时：1630 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 23:22:17,219 耗时：1631 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 23:22:17,219 耗时：1631 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 23:22:17,220 耗时：1632 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 23:22:17,221 耗时：1633 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:22:17,221 耗时：1633 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 23:22:17,222 耗时：1634 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:22:17,596 耗时：2008 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:22:15 CST 2018]; root of context hierarchy 
+2018-06-27 23:22:17,684 耗时：2096 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:22:15 CST 2018]; root of context hierarchy 
+2018-06-27 23:22:17,895 耗时：2307 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2302 ms 
+2018-06-27 23:22:18,133 耗时：2545 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 23:22:18,140 耗时：2552 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 23:22:18 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 23:22:18,141 耗时：2553 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 23:22:18,218 耗时：2630 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:22:18,310 耗时：2722 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 177 ms 
+2018-06-27 23:22:27,168 耗时：11580 日志来自：controller.QiniuController               日志类型: INFO  日志内容：进入方法org.springframework.web.multipart.commons.CommonsMultipartFile@6e2c9ce0 
+2018-06-27 23:22:27,169 耗时：11581 日志来自：controller.QiniuController               日志类型: INFO  日志内容：id=1312 
+2018-06-27 23:25:26,720 耗时：1 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization started 
+2018-06-27 23:25:26,923 耗时：204 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing Root WebApplicationContext: startup date [Wed Jun 27 23:25:26 CST 2018]; root of context hierarchy 
+2018-06-27 23:25:26,994 耗时：275 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [application.xml] 
+2018-06-27 23:25:27,300 耗时：581 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [qiniu.xml] 
+2018-06-27 23:25:27,747 耗时：1028 日志来自：.config.PreferencesPlaceholderConfigurer 日志类型: INFO  日志内容：Loading properties file from class path resource [jdbc.properties] 
+2018-06-27 23:25:27,767 耗时：1048 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:25:27,897 耗时：1178 日志来自：jdbc.datasource.DriverManagerDataSource  日志类型: INFO  日志内容：Loaded JDBC driver: com.mysql.jdbc.Driver 
+2018-06-27 23:25:28,527 耗时：1808 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/index]}" onto public java.lang.String controller.ControllerIndex.index(org.springframework.ui.Model) 
+2018-06-27 23:25:28,529 耗时：1810 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/student/{id}],methods=[GET]}" onto public java.lang.String controller.ControllerIndex.addStudent(org.springframework.ui.Model,int) 
+2018-06-27 23:25:28,530 耗时：1811 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail],methods=[GET]}" onto public java.lang.Boolean controller.MailController.sendMail(javax.servlet.http.HttpServletRequest,pojo.Student) 
+2018-06-27 23:25:28,531 耗时：1812 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/sendMail/{verifyCode}/{id}],methods=[GET]}" onto public boolean controller.MailController.verifyCode(java.lang.String,java.lang.Long) 
+2018-06-27 23:25:28,532 耗时：1813 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/updaImage],methods=[POST]}" onto public java.lang.String controller.QiniuController.updaImage(org.springframework.web.multipart.MultipartFile,int) throws java.lang.Exception 
+2018-06-27 23:25:28,534 耗时：1815 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signin],methods=[POST]}" onto public java.lang.String controller.SmsController.register(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:25:28,535 耗时：1816 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/message],methods=[GET]}" onto public void controller.SmsController.message(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) 
+2018-06-27 23:25:28,535 耗时：1816 日志来自：.annotation.RequestMappingHandlerMapping 日志类型: INFO  日志内容：Mapped "{[/signup],methods=[GET]}" onto public java.lang.String controller.SmsController.signup(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-06-27 23:25:29,126 耗时：2407 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:25:26 CST 2018]; root of context hierarchy 
+2018-06-27 23:25:29,209 耗时：2490 日志来自：.annotation.RequestMappingHandlerAdapter 日志类型: INFO  日志内容：Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Jun 27 23:25:26 CST 2018]; root of context hierarchy 
+2018-06-27 23:25:29,405 耗时：2686 日志来自：web.context.ContextLoader                日志类型: INFO  日志内容：Root WebApplicationContext: initialization completed in 2681 ms 
+2018-06-27 23:25:29,611 耗时：2892 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization started 
+2018-06-27 23:25:29,625 耗时：2906 日志来自：context.support.XmlWebApplicationContext 日志类型: INFO  日志内容：Refreshing WebApplicationContext for namespace 'tile-servlet': startup date [Wed Jun 27 23:25:29 CST 2018]; parent: Root WebApplicationContext 
+2018-06-27 23:25:29,629 耗时：2910 日志来自：factory.xml.XmlBeanDefinitionReader      日志类型: INFO  日志内容：Loading XML bean definitions from class path resource [servlet.xml] 
+2018-06-27 23:25:29,719 耗时：3000 日志来自：ion.AutowiredAnnotationBeanPostProcessor 日志类型: INFO  日志内容：JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2018-06-27 23:25:29,797 耗时：3078 日志来自：web.servlet.DispatcherServlet            日志类型: INFO  日志内容：FrameworkServlet 'tile': initialization completed in 186 ms 

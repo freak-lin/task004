@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: CCP2:REST:2.06">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/CCP2/REST/2.06/REST-2.06.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/CCP2/REST/2.06/REST-2.06-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/CCP2/REST/2.06/REST-2.06-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

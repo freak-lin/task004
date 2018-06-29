@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    <context:component-scan base-package="service"/>
+    <context:component-scan base-package="controller"/>
+    <import resource="qiniu.xml"/>
+
+    <mvc:annotation-driven/>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="location" value="classpath:jdbc.properties"/>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.jdbcUrl}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <!--  7. 配置MyBatis客户端  -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations">
+            <value>classpath:dao/*.xml</value>
+        </property>
+    </bean>
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="dao"/>
+    </bean>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--邮箱API注入-->
+    <bean id="mailApi" class="api.MailApiSendCloud">
+        <constructor-arg name="apiUser" value="freak_lin_test_i0YI6o" />
+        <constructor-arg name="apiKey" value="QSeyeTrXAnUkrq7T" />
+        <constructor-arg name="apiUrl" value="http://api.sendcloud.net/apiv2/mail/send"/>
+    </bean>
+    <!--阿里云API注入-->
+    <bean id="aliyuanOss" class="api.aliyun" >
+        <constructor-arg name="accessKeyId" value="LTAIiuyUHBMseaz5" />
+        <constructor-arg name="accessKeySecret" value="AotLoNPCSXfV6Dz7cCp5Do9exxKi7X" />
+        <constructor-arg name="bucketname" value="picture123213213213213213" />
+        <!-- oss 对应的api接口域名 类似七牛的 zone -->
+        <constructor-arg name="endpoint" value="oss-cn-beijing.aliyuncs.com" />
+        <constructor-arg name="fileUrl" value="oss-cn-beijing.aliyuncs.com" />
+    </bean>
+
+</beans>
