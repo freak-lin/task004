@@ -11,28 +11,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import pojo.Student;
+import service.QiniuServiceImpl;
 import service.StudentService;
 
 @Controller
 public class QiniuController {
     private static Logger logger = Logger.getLogger(QiniuController.class);
 @Autowired
-    QiniuSDK qiniuSDK;
-@Autowired
-    StudentService studentService;
+    QiniuServiceImpl qiniuService;
     @RequestMapping( value = "/updaImage" ,method = RequestMethod.POST)
     @ResponseBody
     public String updaImage(@RequestParam(value = "file", required = false)MultipartFile image,@RequestParam int id)throws Exception{
-        logger.info("进入方法"+image);
-        logger.info("id="+ id);
-        String imageUrl = qiniuSDK.updateFile(image);
-        logger.info(imageUrl+"===========URL");
-        String finalImageUrl =qiniuSDK.download(imageUrl);
-        logger.info(finalImageUrl+ "=================final Url");
-        Student student = studentService.queryUser(id);
-        //设定头像
-        student.setHeadPortrait(finalImageUrl);
-        studentService.updataUser(student);
-        return finalImageUrl;
+        return qiniuService.updaImage(image, id);
     }
 }
