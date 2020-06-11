@@ -37,20 +37,7 @@
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    <!--邮箱API注入-->
-    <bean id="mailApi" class="api.MailApiSendCloud">
-        <constructor-arg name="apiUser" value="freak_lin_test_i0YI6o" />
-        <constructor-arg name="apiKey" value="QSeyeTrXAnUkrq7T" />
-        <constructor-arg name="apiUrl" value="http://api.sendcloud.net/apiv2/mail/send"/>
-    </bean>
-    <!--阿里云API注入-->
-    <bean id="aliyuanOss" class="api.aliyun" >
-        <constructor-arg name="accessKeyId" value="LTAIiuyUHBMseaz5" />
-        <constructor-arg name="accessKeySecret" value="AotLoNPCSXfV6Dz7cCp5Do9exxKi7X" />
-        <constructor-arg name="bucketname" value="picture123213213213213213" />
-        <!-- oss 对应的api接口域名 类似七牛的 zone -->
-        <constructor-arg name="endpoint" value="oss-cn-beijing.aliyuncs.com" />
-        <constructor-arg name="fileUrl" value="oss-cn-beijing.aliyuncs.com" />
-    </bean>
+
+
 
 </beans>
